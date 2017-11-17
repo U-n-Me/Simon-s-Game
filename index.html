@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Simon's Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Raleway'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+   <div class = 'container'>
+    <div class = 'btn t-left' id = '0' onclick = 'onBtnClick(0, true, 800)'>
+   </div>
+   <div class = 'btn t-right' id = '1' onclick = 'onBtnClick(1, true, 800)'>
+   </div>
+   <div class = 'btn b-left' id = '2' onclick = 'onBtnClick(2, true, 800)'>
+   </div>
+   <div class = 'btn b-right' id = '3' onclick = 'onBtnClick(3, true, 800)'>
+   </div>
+   
+   <div class = 'inner-container'>
+     <div class = 'layer-1'>
+       <p id = 'screen'></p>
+       <div class = 'start' id = 'start'>start</div>
+       <div class = 'start strict'>strict</div>
+       <div class = 'start on'>on</div>
+       <div class = 'strict-led'></div>
+      </div>
+     <div class = 'simontxt'>Simon<span style = 'font-size:1em'>®</span></div>
+   </div>
+   
+   
+    <div class = 'msg'></div>
+</div>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
