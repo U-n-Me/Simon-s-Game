@@ -88,7 +88,8 @@ function playerInput(){
     return;
   APPDATA['playerList'] = [];
   $('.btn').css('pointer-events', 'auto');
-  var time = APPDATA['level'][Math.floor(APPDATA['score'] / APPDATA['divs'])] * 4; // level dependent time
+  // level dependent time
+  var time = APPDATA['level'][Math.floor(APPDATA['score'] / APPDATA['divs'])] * 4; 
   chqTime = setTimeout(function(){checkResult()}, time);
 }
 
@@ -128,8 +129,8 @@ function checkResult(){
 }
 
 function showMsg(msg, time){
+  $('.msg').css({display: 'block'});
   $('.msg').html(msg);
-  $('.msg').css('display', 'block');
   APPDATA.loseAudio.play();
   chqTime = setTimeout(function(){$('.msg').css('display', 'none');}, time);
 }
@@ -177,11 +178,15 @@ $('.on').click(function(){
   APPDATA.stopGame();
 });
 
+
+
 $('#start').click(function(){
   if(APPDATA['on']){
       APPDATA.startGame();
   }
 });
+
+
 
 $('.strict').click(function(){
   if(APPDATA['on']){
